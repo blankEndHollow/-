@@ -1,0 +1,14 @@
+/* pages/auth/auto_i.wxss */
+button{
+  position: absolute;
+  bottom: 80rpx;
+  width: 500rpx !important ;
+  left: calc( 375rpx - 250rpx);
+  border-radius: 300rpx;
+}
+page{
+  background-image: url(https://ftp.bmp.ovh/imgs/2020/12/d378eeff8d467832.jpg);
+  background-size: 750rpx 1180rpx;
+  background-repeat: no-repeat;
+  background-color: #00a0ea;
+}

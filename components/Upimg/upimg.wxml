@@ -1,0 +1,5 @@
+<!--components/Upimg/upimg.wxml-->
+<view class="up_img_wrap">
+  <image class="image" src="{{path}}"></image>
+  <icon class="icon" bindtap="delete" type="clear" color="red"></icon>
+</view>

@@ -1,0 +1,72 @@
+<!--pages/user/user_i.wxml-->
+<view class="user_info_wrap">
+  <view class="user_img_wrap" wx:if="{{userInfo}}">
+    <image class="user_bg" src="{{userInfo.avatarUrl}}"></image>
+    <view class="user_info">
+      <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+      <view class="user_name">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+  <view class="user_btn" wx:else bindtap="tologin">
+    <image src="../../img/onlogin.jpg"></image>
+    <view class="user_name">请登录</view>
+  </view>
+</view>
+<view class="user_content">
+  <view class="user_main">
+    <view class="history_wrap">
+      <navigator>
+        <view class="his_num">0</view>
+        <view class="his_name">店铺</view>
+      </navigator>
+      <navigator>
+        <view class="his_num">0</view>
+        <view class="his_name">商品</view>
+      </navigator>
+      <navigator>
+        <view class="his_num">{{record}}</view>
+        <view class="his_name">足迹</view>
+      </navigator>
+      <navigator url="/pages/collect/coll_i?type=3">
+        <view class="his_num">{{colls}}</view>
+        <view class="his_name">收藏</view>
+      </navigator>
+    </view>
+    <view class="order_wrap">
+      <view class="order_title">我的订单</view>
+      <view class="order_content">
+        <navigator url="/pages/order/order_i?type=1">
+          <view class="iconfont icon-list-2-copy"></view>
+          <view class="order_name">全部订单</view>
+        </navigator>
+        <navigator url="/pages/order/order_i?type=2">
+          <view class="iconfont icon-zhifu"></view>
+          <view class="order_name">待支付</view>
+        </navigator>
+        <navigator url="/pages/order/order_i?type=3">
+          <view class="iconfont icon-fukuantongzhi "></view>
+          <view class="order_name">待收货</view>
+        </navigator>
+        <navigator>
+          <view class="iconfont icon-shouhuodizhi "></view>
+          <view class="order_name">退款/退货</view>
+        </navigator>
+      </view>
+    </view>
+
+    <view class="address_wrap">
+      收货地址管理
+    </view>
+
+    <view class="app_info_wrap">
+      <veiw class="app_info_item app_info_contact">
+        <text>联系客服</text>
+        <text>400-188-5568</text>
+        <button open-type="contact"></button>
+      </veiw>
+      <navigator url="/pages/feedback/feed_i" class="app_info_item">意见反馈</navigator>
+      <view class="app_info_item">关于我们</view>
+    </view>
+    <view class="recommend_wrap">推荐给其他人</view>
+  </view>
+</view>

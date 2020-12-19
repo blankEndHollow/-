@@ -1,0 +1,22 @@
+
+function toFixed(n){
+  n+=""
+  if(n.indexOf('.')===-1) return n+=".00"
+  var nal= n.split('.').reverse()[0]
+  if(nal.length>2) n= n.slice(0,n.indexOf('.')+3)
+  return n+= nal.length===1 ? "0" : nal.length ===0? "00" : ""
+}
+function format(s){
+  var date= getDate(s*1000)
+  ,year= date.getFullYear()
+  ,month= date.getMonth()+1
+  ,day= date.getDate()
+  ,hour= date.getHours()
+  ,minute= date.getMinutes()
+  ,seconds= date.getSeconds()
+
+return ([year,month,day].join('-'))+" "+([hour,minute,seconds].join(':'))
+
+ return 200
+}
+module.exports={"toFixed":toFixed,"format":format}

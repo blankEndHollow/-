@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search":"../../components/Search/search"
+  }
+ ,"navigationBarTitleText":"商品分类"
+}

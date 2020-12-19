@@ -1,0 +1,58 @@
+/* pages/feedback/feed_i.wxss */
+page{
+  background-color: #eee;
+  color: #666;
+}
+.fd_main{
+  padding: 20rpx;
+}
+.fd_main .fd_title{}
+.fd_main .fd_tips{
+  display: flex;
+  flex-wrap: wrap;
+}
+.fd_main .fd_tips text{
+  width: 30%;
+  padding:10rpx;
+  text-align: center;
+  background-color: #fff;
+  margin: 20rpx 10rpx ;
+}
+.fd_main .fd_content{
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.fd_main .fd_content textarea{
+  padding: 20rpx;
+}
+.fd_main .fd_content .fd_tool{
+  display: flex;
+  flex-wrap: wrap;
+}
+.fd_main .fd_content .fd_tool button{
+  width: 90rpx!important;
+  margin: 0 0 15rpx 20rpx;
+  height: 90rpx !important;
+  color: #666;
+  font-size: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.fd_main .fd_submit{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20rpx;
+}
+.fd_main .fd_submit button{
+  color: #fff;
+  margin: 0;
+  width: 30%;
+  padding: 20rpx;
+  font-size: 28rpx;
+  background-color: var(--themeColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

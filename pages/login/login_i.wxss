@@ -1,0 +1,11 @@
+/* pages/login/login_i.wxss */
+page{
+  background-image: url(https://ftp.bmp.ovh/imgs/2020/12/6c8af0af4e43c7bd.jpg);
+  background-size: 750rpx 100%;
+}
+button{
+  width: 350rpx !important;
+  position: absolute;
+  bottom: 180rpx;
+  left: calc(375rpx - 175rpx);
+}

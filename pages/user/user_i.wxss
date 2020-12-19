@@ -1,0 +1,144 @@
+/* pages/user/user_i.wxss */
+page{
+  background-color: #edece8;
+}
+.user_info_wrap{
+  height: 48vh;
+  width: 750rpx;
+  position: relative;
+  background-color: var(--themeColor);
+  overflow: hidden;
+}
+.user_info_wrap .user_img_wrap{
+  position: relative;
+  background-color: #fff;
+}
+.user_info_wrap .user_img_wrap .user_bg{
+  height: 49vh;
+  width: 750rpx;
+  filter: blur(18rpx);
+}
+
+.user_info_wrap .user_img_wrap .user_info{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  z-index: 999;
+  text-align: center;
+}
+.user_info_wrap .user_img_wrap .user_info .user_icon{
+  width: 156rpx;
+  height: 156rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_info .user_name{
+  color: #fff;
+}
+.user_info_wrap .user_btn{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  text-align: center;
+
+}
+.user_info_wrap .user_btn image{
+  width: 156rpx;
+  height: 156rpx;
+  border-radius: 50%;
+}
+.user_name{
+  color: #fff;
+  padding-top: 30rpx;
+  font-size: 31rpx;
+}
+
+.user_content{
+  position: relative; 
+}
+
+.user_content .user_main{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50rpx;
+  padding-bottom: 150rpx;
+  color: #666;
+}
+.user_content .user_main .history_wrap{
+  background-color: #fff;
+  border-radius: 8rpx;
+  display: flex;
+}
+.user_content .user_main .history_wrap navigator{
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+
+.user_content .user_main .history_wrap navigator .his_num{
+  color: var(--themeColor);
+}
+.user_content .user_main .history_wrap navigator .his_name{}
+
+.order_wrap{
+  background-color: #fff;
+  margin-top: 30rpx;
+  border-radius: 14rpx;
+}
+.order_wrap .order_title{
+  padding:20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.order_wrap .order_content{
+  display: flex;
+
+}
+.order_wrap .order_content navigator{
+  flex: 1;
+  text-align: center;
+  padding: 15rpx 0;
+}
+.order_wrap .order_content navigator .order_name{
+}
+.order_wrap .order_content navigator .iconfont{
+  color: var(--themeColor);
+  font-size: 42rpx;
+}
+.address_wrap{
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx ;
+  border-radius: 14rpx;
+}
+.app_info_wrap{
+  margin-top: 20rpx;
+  background-color: #fff;
+  border-radius: 14rpx;
+}
+.app_info_wrap .app_info_item{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.app_info_contact{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.app_info_contact button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0!important;
+  background-color: transparent;
+}
+.recommend_wrap{
+  padding: 20rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
+}

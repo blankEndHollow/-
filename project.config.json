@@ -1,0 +1,138 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.14.1",
+  "appid": "wxc7564791fa14bf15",
+  "projectname": "netshop",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/category/cate_i",
+          "pathName": "pages/category/cate_i",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goods_list/list_i",
+          "pathName": "pages/goods_list/list_i",
+          "query": "cid=16",
+          "scene": null
+        },
+        {
+          "name": "pages/goods_detail/detail_i",
+          "pathName": "pages/goods_detail/detail_i",
+          "query": "goods_id=17927",
+          "scene": null
+        },
+        {
+          "name": "pages/cart/cart_i",
+          "pathName": "pages/cart/cart_i",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pay/pay_i",
+          "pathName": "pages/pay/pay_i",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/auth/auto_i",
+          "pathName": "pages/auth/auto_i",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/login/login_i",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/user_i",
+          "pathName": "pages/user/user_i",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/order_i",
+          "pathName": "pages/order/order_i",
+          "query": "type=1",
+          "scene": null
+        },
+        {
+          "name": "pages/collect/coll_i",
+          "pathName": "pages/collect/coll_i",
+          "query": "type=3",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search_i",
+          "pathName": "pages/search/search_i",
+          "query": "type=3",
+          "scene": null
+        },
+        {
+          "name": "pages/feedback/feed_i",
+          "pathName": "pages/feedback/feed_i",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

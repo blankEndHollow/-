@@ -1,0 +1,2 @@
+<!--pages/auth/auto_i.wxml-->
+<button disabled="{{disable}}" open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo">确认授权</button>

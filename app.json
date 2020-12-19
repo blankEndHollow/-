@@ -1,0 +1,59 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/category/cate_i",
+    "pages/goods_list/list_i",
+    "pages/goods_detail/detail_i",
+    "pages/cart/cart_i",
+    "pages/collect/coll_i",
+    "pages/order/order_i",
+    "pages/auth/auto_i",
+    "pages/search/search_i",
+    "pages/user/user_i",
+    "pages/feedback/feed_i",
+    "pages/login/login_i",
+    "pages/pay/pay_i"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ee3f4d",
+    "navigationBarTitleText": "毂雨优购",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#005"
+   ,"selectedColor": "#ee3f4d"
+   ,"position": "bottom"
+   ,"borderStyle": "black"
+   ,"backgroundColor": "#fafafa"
+   ,"custom": false
+   ,"list": [
+      {
+        "pagePath":"pages/index/index"
+       ,"iconPath": "/icons/home.png"
+       ,"text": "首页"
+       ,"selectedIconPath":"/icons/home-a.png"
+      }
+     ,{
+       "pagePath": "pages/category/cate_i"
+       ,"text": "分类"
+       ,"iconPath": "/icons/category.png"
+       ,"selectedIconPath": "/icons/category-a.png"
+     }
+    ,{
+      "pagePath": "pages/cart/cart_i"
+     ,"iconPath": "/icons/cart.png"
+     ,"selectedIconPath": "/icons/cart-a.png"
+     ,"text": "购物车"
+    }
+   ,{
+     "pagePath": "pages/user/user_i"
+    ,"iconPath": "/icons/profile.png"
+    ,"selectedIconPath": "/icons/profile-a.png"
+    ,"text": "个人"
+   }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

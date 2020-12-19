@@ -1,0 +1,26 @@
+<!--pages/feedback/feed_i.wxml-->
+<tab tabs="{{tabs}}" bindtabsItemChange="changeItem">
+  <view class="fd_main">
+    <view class="fd_title">问题种类</view>
+    <view class="fd_tips">
+      <text>购买问题</text>
+      <text>功能建议</text>
+      <text>性能问题</text>
+      <text>其他</text>
+    </view>
+    <view class="fd_content">
+      <textarea value="{{textValue}}" bindinput="pressInput" placeholder="描述您的遇到的问题" name="content" id="" cols="30" rows="10"></textarea>
+      <view class="fd_tool">
+        <button bindtap="chooseImg">+</button>
+         <block wx:for="{{FilePaths}}" wx:key="*this"><upimg binddelimg="remove" index="{{index}}" path="{{item}}"></upimg></block>
+      </view>
+    </view>
+    <view class="fd_submit">
+      <button type="warn" bindtap="FormSubmit">
+        <icon size="23" color="white" type="success_no_circle"></icon>
+        提交
+      </button>
+
+    </view>
+  </view>
+</tab>

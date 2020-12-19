@@ -1,0 +1,50 @@
+<!--pages/pay/pay_i.wxml-->
+<block wx:if="{{address}}">
+  <view class="address" >
+  <view class="icon">
+    <image mode="widthFix" src="../../img/002.jpg"></image>
+  </view>
+  <view class="text">
+    <view class="header">
+      <view class="name">{{address.userName}}</view>
+      <view class="tell">{{address.telNumber}}</view>
+    </view>
+    <view class="info">{{address.all}}</view>
+    
+  </view>
+  <view bindtap="changeAdd" class="tapadd"></view>
+</view>
+<wxs src="../../utils/filter.wxs" module="filter"></wxs>
+<view class="goods">
+
+  <view class="good_item" wx:for="{{cart}}" wx:key="goods_id">
+    <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+    <view class="param">{{item.goods_name}}</view>
+    <view class="tran">
+      <view class="price">￥{{filter.toFixed(item.goods_price)}}</view>
+      <view class="count">x{{item.num}}</view>
+    </view>
+  </view>
+
+</view>
+
+</block>
+
+<block wx:else>
+  <view class="getadd">
+    <button bindtap="getAddr">设置收货地址</button>
+  </view>
+</block>
+
+<view class="tabBar">
+  <view class="space"></view>
+  <view class="price_total">
+    <view>
+      <text class="total_text">共{{address?total:'0'}}件,</text><text class="mindl">合计: <text class="count"> ￥{{address?filter.toFixed(price):'00.00'}}</text> </text>
+    </view>
+    
+  </view>
+  <view class="btn">
+    <view class="submit" bindtap="orderPlay">提交订单</view>
+  </view>
+</view>
